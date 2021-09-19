@@ -2,7 +2,8 @@ extends "res://effects-builder-plugin/symbols/AbstractSymbol.gd"
 
 func init(modloader: Reference, params):
 	.init(modloader, params)
-	self.buffs.push_back(buff().set_group("vacation").add_condition({
+	self.values = [2]
+	self.buffs.push_back(buff().set_group("vacation").set_value(values[0]).add_condition({
 		"condition" : "adjacent",
 		"type" : "sun",
 	}).add_condition({
