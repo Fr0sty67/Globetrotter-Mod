@@ -1,0 +1,9 @@
+{
+    "id": "globetrotter-mod",
+    "version": "1.0.0",
+    "authors": ["Pudge"],
+    "name": "Globetrotter - a Luck be a Landlord mod",
+    "description": "Adds new symbols and items to Luck be a Landlord",
+    "dependencies": ["effects-builder-plugin"],
+    "load-after": []
+}
