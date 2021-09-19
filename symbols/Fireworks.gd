@@ -6,7 +6,8 @@ func init(modloader: Reference, params):
 	self.buffs.push_back(buff().set_group("adult_friendly").set_value(values[0]).add_condition({
 		"condition" : "symbol_count",
 		"type" : "night_sky",
-		"operator" : "at_least"
+		"operator" : "at_least",
+		"value": 1
 	}).animate("shake"))
 	self.id = "fireworks"
 	self.value = 2

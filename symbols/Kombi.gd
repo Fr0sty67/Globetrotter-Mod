@@ -3,7 +3,7 @@ extends "res://effects-builder-plugin/symbols/AbstractSymbol.gd"
 func init(modloader: Reference, params):
 	.init(modloader, params)
 	self.values = [1]
-	self.destroys.push_back(destroy().set_group("adult_friendly").set_buff("permanent_bonus", values[0], true, true).animate("bounce"))
+	self.destroys.push_back(destroy().set_group("adult_friendly").set_buff("permanent_bonus", values[0], true, false).animate("bounce"))
 	self.id = "kombi"
 	self.value = 5
 	self.rarity = "very_rare"

@@ -8,7 +8,7 @@ func init(modloader: Reference, params):
 	}).animate("shake"))
 	self.buffs.push_back(buff().set_group("organism").set_value(values[0]).set_target({"row" : {}}).animate("circle"))
 	self.id = "campfire"
-	self.value = 2
+	self.value = 1
 	self.rarity = "uncommon"
 	self.sfx = ["sizzle"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/campfire.png")
