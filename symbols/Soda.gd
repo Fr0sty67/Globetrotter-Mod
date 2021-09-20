@@ -3,7 +3,9 @@ extends "res://effects-builder-plugin/symbols/AbstractSymbol.gd"
 func init(modloader: Reference, params):
 	.init(modloader, params)
 	self.values = [3]
-	self.adds.push_back(add().set_new_type("bubble").add_condition({"condition" : "destroyed"}).set_quantity(values[0]))
+	self.adds.push_back(add().set_new_type("bubble").add_condition(
+		{"condition" : "destroyed"}
+	).set_quantity(values[0]))
 	self.id = "soda"
 	self.value = 2
 	self.rarity = "uncommon"

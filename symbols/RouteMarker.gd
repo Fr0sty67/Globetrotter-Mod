@@ -2,7 +2,7 @@ extends "res://effects-builder-plugin/symbols/AbstractSymbol.gd"
 
 func init(modloader: Reference, params):
 	.init(modloader, params)
-	self.values = [10]
+	self.values = [5]
 	self.adds.push_back(add().set_new_type("cactus").random(0).animate("rotate"))
 	self.id = "route_marker"
 	self.value = 1

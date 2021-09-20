@@ -6,7 +6,7 @@ func init(modloader: Reference, params):
 	self.transforms.push_back(transform().set_type("marshmallow").set_new_type("toasted_marshmallow").set_target({
 		"above" : {}
 	}).animate("shake"))
-	self.buffs.push_back(buff().set_group("organism").set_value(values[0]).set_target({"row" : {}}).animate("circle"))
+	self.buffs.push_back(buff().set_group("adult_friendly").set_value(values[0]).set_target({"row" : {}}).animate("circle"))
 	self.id = "campfire"
 	self.value = 1
 	self.rarity = "uncommon"
