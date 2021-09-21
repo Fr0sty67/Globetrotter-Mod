@@ -36,6 +36,7 @@ func load(modloader: Reference, mod_info, tree: SceneTree):
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Tourist.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Trilithon.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Trunks.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Tumbleweed.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Tuna.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/VendingMachine.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/WaterBottle.gd")
