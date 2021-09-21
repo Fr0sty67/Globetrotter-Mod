@@ -9,6 +9,7 @@ func init(modloader: Reference, params):
 	self.id = "trilithon"
 	self.value = 0
 	self.rarity = "common"
+	self.groups = ["landmark"]
 	self.sfx = ["hex"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/trilithon.png")
 	self.name = "Trilithon"

@@ -8,6 +8,7 @@ func init(modloader: Reference, params):
 	self.value = 2
 	self.rarity = "rare"
 	self.sfx = ["whistle"]
+	self.groups = ["backpackhas"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/binoculars.png")
 	self.name = "Binoculars"
 	self.description = .get_description()

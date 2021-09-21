@@ -8,6 +8,7 @@ func init(modloader: Reference, params):
 	self.value = 1
 	self.rarity = "common"
 	self.sfx = ["beam"]
+	self.groups = ["spawner0", "landmark"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/route-marker.png")
 	self.name = "Route Marker"
 	self.description = .get_description()

@@ -2,8 +2,8 @@ extends "res://effects-builder-plugin/symbols/AbstractSymbol.gd"
 
 func init(modloader: Reference, params):
 	.init(modloader, params)
-	self.transforms.push_back(transform().set_type("coin").set_new_group("junk_food", "uncommon").animate("shake"))
-	self.adds.push_back(add().set_new_group("junk_food", "uncommon").add_condition({
+	self.transforms.push_back(transform().set_type("coin").set_new_group("vendingmachinehas", "uncommon").animate("shake"))
+	self.adds.push_back(add().set_new_group("vendingmachinehas", "uncommon").add_condition({
 		"condition" : "adjacent",
 		"type" : "hooligan"
 	}).animate("shake", 1))

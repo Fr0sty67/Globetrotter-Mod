@@ -6,6 +6,7 @@ const mod_name : String = "globetrotter-mod"
 
 func load(modloader: Reference, mod_info, tree: SceneTree):
 	# path to symbol
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Backpack.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/BeachTowels.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/BeachUmbrella.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Binoculars.gd")
@@ -16,6 +17,7 @@ func load(modloader: Reference, mod_info, tree: SceneTree):
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Fireworks.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/FishingRod.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Globe.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/IslandHead.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Kombi.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Macaw.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Marshmallow.gd")
@@ -31,16 +33,18 @@ func load(modloader: Reference, mod_info, tree: SceneTree):
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/ToastedMarshmallow.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Torii.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Toucan.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Tourist.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Trilithon.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Trunks.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Tuna.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/VendingMachine.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/WaterBottle.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Wren.gd")
 
 	# path to patch
 	# groups
 	var gambling = [
-		"d3", "d5"
+		"d3", "d5",
 	]
 	for i in gambling:
 		modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Group.gd", {"id": i, "group": "gambling"})
@@ -75,6 +79,12 @@ func load(modloader: Reference, mod_info, tree: SceneTree):
 	]
 	for i in fish:
 		modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Group.gd", {"id": i, "group": "fish"})
+	
+	var backpackhas = [
+		"banana", "coin",
+	]
+	for i in backpackhas:
+		modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Group.gd", {"id": i, "group": "backpackhas"})
 	
 	modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Ninja.gd")
 	modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Pirate.gd")
