@@ -2,8 +2,10 @@ extends "res://effects-builder-plugin/symbols/AbstractSymbol.gd"
 
 func init(modloader: Reference, params):
 	.init(modloader, params)
-	self.adds.push_back(add().set_new_group("backpackhas").add_condition({
+	self.values = [50]
+	self.adds.push_back(add().random(0).set_new_group("backpackhas").add_condition({
 		"condition" : "adjacent",
+		"target" : "any",
 		"group" : "adult_friendly"
 	}).animate("shake"))
 	self.id = "backpack"

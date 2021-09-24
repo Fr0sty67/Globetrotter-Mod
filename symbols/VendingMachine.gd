@@ -5,6 +5,7 @@ func init(modloader: Reference, params):
 	self.transforms.push_back(transform().set_type("coin").set_new_group("vendingmachinehas", "uncommon").animate("shake"))
 	self.adds.push_back(add().set_new_group("vendingmachinehas", "uncommon").add_condition({
 		"condition" : "adjacent",
+		"target" : "any",
 		"type" : "hooligan"
 	}).animate("shake", 1))
 	self.id = "vending_machine"

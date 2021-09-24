@@ -5,6 +5,7 @@ func init(modloader: Reference, params):
 	self.values = [1]
 	self.buffs.push_back(buff().set_buff_type("permanent_bonus").set_target({"self" : {}}).add_condition({
 		"condition" : "adjacent",
+		"target" : "any",
 		"group" : "landmark",
 	}).set_value(values[0]).animate("circle"))
 	self.id = "tourist"

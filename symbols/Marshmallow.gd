@@ -5,6 +5,6 @@ func init(modloader: Reference, params):
 	self.id = "marshmallow"
 	self.value = 2
 	self.rarity = "uncommon"
-	self.groups = ["food", "vendingmachine", "backpackhas"]
+	self.groups = ["food", "vendingmachine", "backpackhas", "sweets"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/marshmallow.png")
 	self.name = "Marshmallow"

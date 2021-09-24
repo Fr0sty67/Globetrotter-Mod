@@ -8,28 +8,37 @@ func load(modloader: Reference, mod_info, tree: SceneTree):
 	# path to symbol
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Backpack.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/BeachTowels.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Beach.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/BeachUmbrella.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Binoculars.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Cactus.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Campfire.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/ChocolateBar.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/City.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/DrPepper.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Elephant.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Fireworks.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/FishingRod.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Globe.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Iceberg.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/IslandHead.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Kombi.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Macaw.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Marshmallow.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/MrsSweets.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/NightSky.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Oni.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Pelican.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Penguin.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Piano.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/PolarBear.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Rocket.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/RouteMarker.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Ship.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/ShrineMaiden.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Shuriken.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Soda.gd")
+	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Squid.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/ToastedMarshmallow.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Torii.gd")
 	modloader.add_mod_symbol("res://" + mod_name + "/symbols/Toucan.gd")
@@ -87,5 +96,12 @@ func load(modloader: Reference, mod_info, tree: SceneTree):
 	for i in backpackhas:
 		modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Group.gd", {"id": i, "group": "backpackhas"})
 	
+	var sweets = [
+		"candy", "honey",
+	]
+	for i in sweets:
+		modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Group.gd", {"id": i, "group": "sweets"})
+		
+	modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Group.gd", {"id": "bear", "group": "bears"})
 	modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Ninja.gd")
 	modloader.add_symbol_patch("res://" + mod_name + "/symbols/patches/Pirate.gd")

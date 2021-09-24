@@ -9,7 +9,7 @@ func init(modloader: Reference, params):
 	self.id = "soda"
 	self.value = 2
 	self.rarity = "uncommon"
-	self.groups = ["food", "vendingmachinehas"]
+	self.groups = ["food", "vendingmachinehas", "sweets"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/soda.png")
 	self.name = "Soda"
 	self.description = .get_description()

@@ -4,7 +4,7 @@ func init(modloader: Reference, params):
 	.init(modloader, params)
 	self.values = [1]
 	self.buffs.push_back(buff().set_type("trilithon").set_buff_type("temporary_bonus").set_target({
-		"edges" : {}
+		"edge" : {}
 	}).set_value(values[0]))
 	self.id = "trilithon"
 	self.value = 0

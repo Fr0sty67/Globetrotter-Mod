@@ -4,7 +4,7 @@ func init(modloader: Reference, params):
 	.init(modloader, params)
 	self.values = [4]
 	self.buffs.push_back(buff().set_value(values[0]).set_target({
-		"corners" : {}
+		"corner" : {}
 	}).animate("rotate"))
 	self.id = "globe"
 	self.value = 4

@@ -7,7 +7,7 @@ func init(modloader: Reference, params):
 	self.id = "chocolate_bar"
 	self.value = 4
 	self.rarity = "very_rare"
-	self.groups = ["food", "vendingmachinehas"]
+	self.groups = ["food", "vendingmachinehas", "sweets"]
 	self.sfx = ["jump"]
 	self.texture = load_texture("res://globetrotter-mod/symbols/chocolate-bar.png")
 	self.name = "Chocolate Bar"
